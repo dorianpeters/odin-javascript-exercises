@@ -1,6 +1,6 @@
 const palindromes = function (inputString) {
-    filtered = filterString(inputString);
-    reversed = filtered.split('').reverse().join('');
+    filtered = filterString(inputString).toLowerCase();
+    reversed = filtered.split('').reverse().join('').toLowerCase();
     if (filtered === reversed) return true;
     else return false;
 
