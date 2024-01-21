@@ -1,4 +1,5 @@
 const fibonacci = function(n) {
+    n = parseInt(n);
     if (n <= -1)
         return "OOPS";
     else if ((n == 0) || (n == 1))
