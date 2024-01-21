@@ -1,6 +1,6 @@
 const sumAll = function(low, high) {
     // Error checking
-    if (Number.isNaN(low) || Number.isNaN(high) || 
+    if ((!Number.isSafeInteger(low)) || (!Number.isSafeInteger(high)) || 
     (low < 0) || (high < 0))
         return "ERROR"
     if (low > high)
