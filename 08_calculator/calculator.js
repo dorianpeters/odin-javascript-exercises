@@ -10,13 +10,17 @@ const subtract = function(num1, num2) {
 const sum = function(numArray) {
   let total = 0;
   numArray.forEach(element => {
-    total+=element
+    total+=element;
   });
   return total;
 };
 
-const multiply = function() {
-
+const multiply = function(numArray) {
+  let total = 1;
+  numArray.forEach(element => {
+    total*=element;
+  });
+  return total;
 };
 
 const power = function() {
